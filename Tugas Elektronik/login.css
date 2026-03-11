@@ -1,0 +1,107 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background: #f0f0f0; /* background netral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER FORM */
+.login-container {
+    background-color: #f9f9f9;
+    padding: 50px 40px; /* lebih besar */
+    border-radius: 18px; /* sedikit lebih besar supaya proporsional */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    width: 420px; /* lebih lebar */
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* JUDUL FORM */
+.login-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* LABEL FORM */
+.login-container label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* INPUT FIELDS */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #999;
+    box-shadow: 0 0 8px rgba(150,150,150,0.5);
+}
+
+/* BUTTON LOGIN */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #bbb; /* silver */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #999; /* dark silver */
+    transform: translateY(-2px);
+}
+
+/* LINK LUPA PASSWORD & REGISTER */
+.login-container .links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.login-container .links a {
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.login-container .links a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* RESPONSIF UNTUK MOBILE */
+@media (max-width: 400px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+}

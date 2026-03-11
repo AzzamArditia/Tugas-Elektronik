@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+</head>
+<body>
+
+<header>
+    <h1>Dashboard Admin</h1>
+    <nav>
+        <a href="dashboard.html">Home</a> |
+        <a href="beli.html">Beli</a> |
+        <a href="logout.php">Logout</a>
+    </nav>
+</header>
+
+<main>
+
+<section>
+    <h2>Tambah Barang</h2>
+
+    <form action="create.php" method="POST" enctype="multipart/form-data">
+        
+        <label>Nama Barang</label>
+        <input type="text" name="nama_barang" required>
+
+        <label>Harga</label>
+        <input type="number" name="harga" required min="0">
+
+        <label>Stok</label>
+        <input type="number" name="stok" required min="0">
+
+        <label>Upload Gambar</label>
+        <input type="file" name="gambar" accept="image/*" required>
+
+        <button type="submit">Tambah</button>
+    </form>
+</section>
+
+<section>
+    <h2>Daftar Barang</h2>
+
+    <table border="1">
+        <thead>
+    <tr>
+        <th>Nama Barang</th>
+        <th>Stok</th>
+        <th>Kondisi</th>
+        <th>Lokasi Rak</th>
+        <th>Aksi</th>
+    </tr>
+</thead>
+        <tbody>
+            <!-- DATA DARI DATABASE -->
+            <!-- Looping PHP nanti di sini -->
+        </tbody>
+    </table>
+</section>
+
+</main>
+
+<footer>
+    <p>Admin Panel CRUD</p>
+</footer>
+
+</body>
+</html>
